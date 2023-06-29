@@ -133,6 +133,9 @@ const Modal: React.FC<ModalProps> = ({
                 border-b-[1px]
                 "
               >
+                <div className="text-lg font-semibold">
+                  {title}
+                </div>
                 <button
                   className="
                     p-1
@@ -140,15 +143,12 @@ const Modal: React.FC<ModalProps> = ({
                     hover:opacity-70
                     transition
                     absolute
-                    left-9
+                    right-9
                   "
                   onClick={handleClose}
                 >
                   <IoMdClose size={18} />
                 </button>
-                <div className="text-lg font-semibold">
-                  {title}
-                </div>
               </div>
               {/*body*/}
               <div className="relative p-6 flex-auto">
